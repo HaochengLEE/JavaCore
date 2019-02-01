@@ -35,4 +35,8 @@ public class Cat extends Animal {
     public void eat() {
         System.out.println("Cat can eating");
     }
+
+    public void play() {
+        System.out.println("Cat is playing");
+    }
 }

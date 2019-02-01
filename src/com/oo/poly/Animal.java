@@ -5,7 +5,7 @@ package com.oo.poly;
  * @create 2019-01-29 2:06 PM
  **/
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private int age;

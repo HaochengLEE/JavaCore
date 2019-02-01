@@ -8,11 +8,11 @@ package com.oo.poly;
 public class PolyTest {
     public static void main(String[] args) {
         //向上转型
-        Animal one = new Animal();
+//        Animal one = new Animal();
         Animal two = new Cat();
         Animal three = new Dog();
 
-        one.eat();
+//        one.eat();
         two.eat();
         three.eat();
         //这里不能调用子类独有的方法，如three.sleep();
