@@ -37,9 +37,7 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public void eat(){
-        System.out.println("eating...");
-    }
+    public abstract void eat();
 
 
 }
