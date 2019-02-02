@@ -6,7 +6,15 @@ package com.oo.Interface;
  **/
 
 public class InterfaceTest {
-    IPhoto ip=new Telphone();
+    public static void main(String[] args) {
+        IPhoto ip=new Telphone();
+        Telphone tp=new Telphone();
+        tp.connection();
+        INet in=new Telphone();
+        System.out.println(in.time);
+
+    }
+
 
 
 }

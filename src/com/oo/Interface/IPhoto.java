@@ -8,4 +8,9 @@ package com.oo.Interface;
 public interface IPhoto {
     public void photo();
 
+
+    default void showphoto(){
+        System.out.println("photo is beauty");
+    }
+
 }
