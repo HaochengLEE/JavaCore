@@ -168,3 +168,13 @@ public interface C extend A,B{
 5）不能出现静态成员
 
 6）匿名内部类可以实现接口也可以继承父类，但是不可兼得
+
+## Java其他
+### 一、异常
+>程序运行期间的错误
+#### 1.try catch finally
+try:抛出异常
+
+catch：捕获异常
+
+finally：一定会被执行
