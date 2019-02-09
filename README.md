@@ -178,3 +178,8 @@ try:抛出异常
 catch：捕获异常
 
 finally：一定会被执行
+
+#### 2.throw和throws
+>可以通过throws声明将要抛出何种类型的异常，通过throw将产生的异常抛出
+
+1)
