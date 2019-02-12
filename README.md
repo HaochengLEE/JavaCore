@@ -200,6 +200,59 @@ finally：一定会被执行
 
 ### 二、包装类
 
+#### 1.装箱与拆箱
+1）装箱：把基本数据类型转换成包装类
+~~~
+    //1.自动装箱
+    int pack1=2;
+    Integer pack2=pack1;
+    //2.手动装箱
+    Integer pack3=new Integer(pack1);
+~~~
+
+2）拆箱：把包装类转换成基本数据类型
+~~~
+    Integer pack3=new Integer(pack1);
+    //1.自动拆箱
+    int open1=pack3;
+    //2.手动拆箱
+    int open2=pack3.intValue();
+~~~
+
+#### 2.字符串与基本数据类型
+
+1）toString方法
+~~~
+int st1=2;
+String st2=Integer.toString(st1);
+~~~
+
+2）parse方法
+~~~
+String st2=Integer.toString(st1);
+//parse
+int st3=Integer.parseInt(st2);
+~~~
+
+3）valueOf方法
+~~~
+String st2=Integer.toString(st1);
+//包装类的valueOf 先将字符串转换为包装类，再通过自动拆箱完成基本类型转换
+int st4=Integer.valueOf(st2);
+~~~
+
+4）注意事项
+
+### 三、集合
+
+#### 1.Collection
+1）List
+
+元素有序可重复
+
+ArrayList LinkedList
+#### 2.Set
+
 
 
 
