@@ -247,11 +247,13 @@ int st4=Integer.valueOf(st2);
 
 #### 1.Collection
 1）List
-
-元素有序可重复
+>List接口继承自Collection接口
+是一种元素有序的集合，用户可以精确控制的插入元素等其他操作，与Set的区别在于List可以重复
 
 ArrayList LinkedList
 #### 2.Set
+1）HashSet
+>不可重复
 
 
 
