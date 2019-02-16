@@ -255,6 +255,13 @@ ArrayList LinkedList
 1）HashSet
 >不可重复
 
+#### 3.Map
+>K - keys V - values
+
+1)HashMap
+>key值不能重复 无序排列
+
+
 
 
 
