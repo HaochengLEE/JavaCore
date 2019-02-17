@@ -41,9 +41,11 @@ public class DictionaryDemo {
         System.out.println("Please enter key for finding value");
         String a=input.next();
         String v=animal.get(a);
-        System.out.println("value is"+" "+v);
-
-
+        if(v!=null){
+            System.out.println("value is"+" "+v);
+        }else{
+            System.out.println("Cannot find key"+a);
+        }
 
     }
 

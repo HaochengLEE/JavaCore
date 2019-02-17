@@ -245,12 +245,14 @@ int st4=Integer.valueOf(st2);
 
 ### 三、集合
 
-#### 1.Collection
-1）List
+#### Collection
+#### 1.List
 >List接口继承自Collection接口
 是一种元素有序的集合，用户可以精确控制的插入元素等其他操作，与Set的区别在于List可以重复
 
-ArrayList LinkedList
+1）ArrayList 
+
+2）LinkedList
 #### 2.Set
 1）HashSet
 >不可重复
@@ -259,7 +261,7 @@ ArrayList LinkedList
 >K - keys V - values
 
 1)HashMap
->key值不能重复 无序排列
+>key值不能重复 无序排列 可以使用null值和null键
 
 
 
