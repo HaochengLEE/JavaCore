@@ -265,7 +265,8 @@ int st4=Integer.valueOf(st2);
 
 ### 四、线程
 
-
+#### 1.线程的生命周期
+New-Runnable-Running-Blocked-Dead
 
 
 
