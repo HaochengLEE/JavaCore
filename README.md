@@ -268,6 +268,28 @@ int st4=Integer.valueOf(st2);
 #### 1.线程的生命周期
 New-Runnable-Running-Blocked-Dead
 
+#### 2.sleep方法
+
+#### 3.join方法
+
+#### 4.线程优先级
+1）优先级常量
+
+MAX_PRIORITY
+
+MIN_PRIORITY
+
+NORM_PRIORITY
+
+2)getPriority
+
+3)setPriority
+
+
+
+
+
+
 
 
 
