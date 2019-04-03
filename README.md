@@ -305,7 +305,14 @@ NORM_PRIORITY
 #### 4.对象的序列化与反序列化
 
 
+### 六、字符串
 
+#### 1.String、StringBuilder和StringBuffer
+> String具有不可变性，更改平凡时建议采用StringBuilder
+
+StringBuffer是线程安全，StringBuilder没有所以性能高。
+
+String每次进行更改的时候都会生成一个新的String对象，而StringBuilder和StringBuffer不会
 
 
 

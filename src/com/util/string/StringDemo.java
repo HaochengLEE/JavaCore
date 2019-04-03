@@ -22,6 +22,9 @@ public class StringDemo {
         System.out.println(str.substring(5,7));
 
 
+
+
+
     }
 
 }
