@@ -299,9 +299,9 @@ NORM_PRIORITY
 2）
 
 #### 2.字节流
-
+InputStream
 #### 3.字符流
-
+OutputStream
 #### 4.对象的序列化与反序列化
 
 
