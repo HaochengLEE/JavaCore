@@ -1,4 +1,4 @@
-package com.util.set.product;
+package com.util.collection.product;
 
 import java.util.HashMap;
 import java.util.Iterator;

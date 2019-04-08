@@ -1,6 +1,4 @@
-package com.util.set;
-
-import sun.invoke.empty.Empty;
+package com.util.collection;
 
 import java.util.*;
 

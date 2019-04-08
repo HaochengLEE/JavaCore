@@ -1,4 +1,4 @@
-package com.util.set;
+package com.util.collection;
 
 import java.util.Objects;
 
