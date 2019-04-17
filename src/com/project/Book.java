@@ -6,11 +6,13 @@ package com.project;
  **/
 
 public class Book {
+    private String id;
     private String name;
     private String writer;
     private String company;
 
-    public Book(String name, String writer, String company) {
+    public Book(String id, String name, String writer, String company) {
+        this.id = id;
         this.name = name;
         this.writer = writer;
         this.company = company;
@@ -28,7 +30,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "id:"+id+"name:"+name+"writer:"+writer+"company:"+company;
     }
 
     public String getName() {
@@ -53,5 +55,13 @@ public class Book {
 
     public void setCompany(String company) {
         this.company = company;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
