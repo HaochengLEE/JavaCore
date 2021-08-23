@@ -9,6 +9,7 @@ public class Tigter extends Animal {
     public Tigter(){
         System.out.println("is a tiger");
     }
+    @Override
     public void run(){
         System.out.println("Tigter can run");
     }

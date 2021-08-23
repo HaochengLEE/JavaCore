@@ -35,3 +35,8 @@ target/
 .DS_Store
 Thumbs.db
 
+#gradle
+.gradle
+gradlew
+gradlew.bat
+
