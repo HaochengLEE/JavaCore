@@ -1,0 +1,44 @@
+
+
+apply plugin: 'java'
+
+apply plugin: 'org.springframework.boot'
+
+
+// 设置sourceSets,只是project的属性
+sourceSets {
+    // 设置main source, 打包需要用到的资源
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+
+        resources {
+            srcDirs = ["src/main/resources", "config"]  // 我在这里多加了一个 config 包
+        }
+    }
+    // 设置test source, 单元测试所需的资源
+    test {
+
+        java {
+            srcDirs = ['src/test/java']
+        }
+
+        resources {
+            srcDirs = ['src/test/resources']
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE'
+    }
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+}
