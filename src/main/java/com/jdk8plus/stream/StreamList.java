@@ -2,10 +2,15 @@ package com.stream;
 
 import org.junit.jupiter.api.Test;
 
+import java.text.ParseException;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * * @author lihaocheng
@@ -57,6 +62,45 @@ public class StreamList {
         healthFood.stream()
                 .forEach(System.out::println);
     }
+
+    /**
+     * Java实战 测验 5.2 练习1
+     */
+    @Test
+    public void Ex1(){
+        List<Integer> list=Arrays.asList(1,2,3,4,5);
+        List<Integer> result=list.stream()
+                .map(n->n*n)
+                .collect(toList());
+        result.stream()
+                .forEach(System.out::println);
+
+    }
+
+    /**
+     * Java实战 测验 5.2 练习3
+     */
+    @Test
+    public void Ex2(){
+        List<Integer> list1=Arrays.asList(1,2,3);
+        List<Integer> list2=Arrays.asList(3,4);
+        List<int[]> pairs=list1.stream()
+                .flatMap(i->list2.stream()
+                        .map(j->new int[]{i,j}))
+                .collect(toList());
+        for (int[] arr:
+             pairs) {
+            for (int i=0;i<arr.length;i++){
+                System.out.print(","+arr[i]);
+            }
+            System.out.println("");
+        }
+
+
+    }
+
+
+
 
 
 }
