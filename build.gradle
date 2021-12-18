@@ -2,9 +2,6 @@
 
 apply plugin: 'java'
 
-apply plugin: 'org.springframework.boot'
-
-
 // 设置sourceSets,只是project的属性
 sourceSets {
     // 设置main source, 打包需要用到的资源
@@ -14,7 +11,7 @@ sourceSets {
         }
 
         resources {
-            srcDirs = ["src/main/resources", "config"]  // 我在这里多加了一个 config 包
+            srcDirs = ["src/main/resources"]
         }
     }
     // 设置test source, 单元测试所需的资源
@@ -30,15 +27,15 @@ sourceSets {
     }
 }
 
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE'
-    }
+repositories {
+
+    mavenCentral()
+}
+dependencies {
+//    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    compile('org.junit.jupiter:junit-jupiter:5.7.0')
+//    testCompile('org.junit.jupiter:junit-jupiter:5.7.0')
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+
 }
 
-dependencies {
-    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-}
