@@ -1,4 +1,6 @@
-package com.lambda;
+package com.jdk8plus.lambda;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +15,8 @@ public class FilterApples {
         return null;
     }
     //将颜色作为参数
-    public static void main(String[] args) {
+    @Test
+    void test() {
 
     }
 }
