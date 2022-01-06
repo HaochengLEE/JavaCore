@@ -38,7 +38,6 @@ public class ComplatableFuntureStream {
         });
         CompletableFuture<Integer> b=new CompletableFuture<>();
         for (int i=0;i<999999;i++){
-//            threadPoolExecutor.submit(()-> System.out.println(a.complete(sum)));
             threadPoolExecutor.submit(()-> System.out.println(b.complete(sum)));
         }
     }
