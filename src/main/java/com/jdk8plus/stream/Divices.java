@@ -1,4 +1,4 @@
-package com.stream;
+package com.jdk8plus.stream;
 
 /**
  * * @author lihaocheng

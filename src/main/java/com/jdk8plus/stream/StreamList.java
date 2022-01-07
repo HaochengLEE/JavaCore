@@ -1,16 +1,12 @@
-package com.stream;
+package com.jdk8plus.stream;
+
+
 
 import org.junit.jupiter.api.Test;
 
-import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * * @author lihaocheng
