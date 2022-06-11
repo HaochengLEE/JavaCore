@@ -28,8 +28,8 @@ public class LocalAndDate {
     @Test
     public void weekUtil(){
         LocalDate localDate=LocalDate.of(2021,8,26);
-        LocalDate startDate=localDate.with(nextOrSame(DayOfWeek.SUNDAY));
-        LocalDate endDate=localDate.with(previousOrSame(DayOfWeek.MONDAY));
+        LocalDate startDate=localDate.with(previousOrSame(DayOfWeek.MONDAY));
+        LocalDate endDate=localDate.with(nextOrSame(DayOfWeek.SUNDAY));
         System.out.println(startDate);
         System.out.println(endDate);
 
