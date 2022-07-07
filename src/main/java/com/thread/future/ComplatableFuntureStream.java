@@ -50,6 +50,13 @@ public class ComplatableFuntureStream {
         );
     }
 
+    @DisplayName("Stream实现异步加名字")
+    @Test
+    void testAsyStreamList(){
+        getNameList().stream().parallel().forEach(
+                s-> System.out.println(s)
+        );
+    }
     @DisplayName("同步加名字")
     @Test
     void testList(){
