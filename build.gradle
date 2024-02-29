@@ -32,10 +32,21 @@ repositories {
     mavenCentral()
 }
 dependencies {
+
 //    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    compile('org.junit.jupiter:junit-jupiter:5.7.0')
+    implementation('org.junit.jupiter:junit-jupiter:5.7.0')
 //    testCompile('org.junit.jupiter:junit-jupiter:5.7.0')
-    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    implementation group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    implementation group: 'com.alibaba.fastjson2', name: 'fastjson2', version: '2.0.46'
+//    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.16.1'
+//    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.16.1'
+//    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.16.1'
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.16.1'
+
+
+    //lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
 
 }
 

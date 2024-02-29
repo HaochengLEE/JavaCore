@@ -34,4 +34,13 @@ public class LocalAndDate {
         System.out.println(endDate);
 
     }
+
+    /**
+     * LocalDateTime 转 LocalDate
+     */
+    @Test
+    void dateTimeToDate(){
+        LocalDateTime localDateTime=LocalDateTime.now();
+        LocalDate today=localDateTime.toLocalDate();
+    }
 }
